@@ -9,6 +9,7 @@ int main() {
     int populacao1, populacao2;
     float area1, area2, pib1, pib2;
     int pontos1, pontos2;
+    float densidade1, densidade2, pib1, pib2;
 
     // Leitura dos dados da primeira carta
     printf("Digite os dados da primeira carta:\n");
@@ -26,6 +27,13 @@ int main() {
     scanf("%f", &pib1);
     printf("Número de Pontos Turísticos: ");
     scanf("%d", &pontos1);
+
+    //Densidade Populacional = População / Área da cidade
+    //Pib Per Capita = Pib / População
+
+    densidade1 = populacao1 / area1;
+
+    printf("Densidade Populacional: %f", densidade1);
 
     // Leitura dos dados da segunda carta
     printf("\nDigite os dados da segunda carta:\n");
