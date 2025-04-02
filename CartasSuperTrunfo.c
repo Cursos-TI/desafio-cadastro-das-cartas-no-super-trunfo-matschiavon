@@ -16,16 +16,17 @@ int main() {
     // Leitura dos dados da primeira carta
     printf("\nDigite os dados da primeira carta\n");
     printf("\n");
+    
     printf("Estado (letra de A a H):");
-    scanf(" %c", &estado1); // O espaço antes de %c é para garantir que o caractere anterior seja consumido
+    scanf(" %c", &estado1); 
     
     printf("Código da Carta: ");
     scanf("%s", codigo1);
     
     printf("Nome da Cidade: ");
-    scanf(" %[^\n]s", cidade1); // O espaço antes de %[^\n]s permite ler uma linha inteira, incluindo espaços
-   
-    printf("População:");
+    scanf(" %[^\n]s", cidade1);
+
+    printf("População: ");
     scanf("%lu", &populacao1);
     
     printf("Área (em km²): ");
@@ -54,14 +55,14 @@ int main() {
     printf("\n");
    
     printf("Estado (letra de A a H): ");
-    scanf(" %c", &estado2); // O espaço antes de %c é para garantir que o caractere anterior seja consumido
-    
+    scanf(" %c", &estado2); 
+
     printf("Código da Carta: ");
     scanf("%s", codigo2);
     
     printf("Nome da Cidade: ");
-    scanf(" %[^\n]s", cidade2); // O espaço antes de %[^\n]s permite ler uma linha inteira, incluindo espaços
-    
+    scanf(" %[^\n]s", cidade2); 
+
     printf("População: ");
     scanf("%lu", &populacao2);
    
@@ -85,7 +86,8 @@ int main() {
     superPoder2 = (populacao2 + area2 + pib2 + (1 / densidade2));
     
     // Exibição das informações da primeira carta
-    printf("\n***  Dados da Carta 1  ***\n");
+
+    printf("\n***  DADOS DA CARTA 1  ***\n");
     printf("Estado: %c\n", estado1);
     printf("Código: %s\n", codigo1);
     printf("Nome da Cidade: %s\n", cidade1);
@@ -99,7 +101,7 @@ int main() {
     
     // Exibição das informações da segunda carta
 
-    printf("\n*** Dados da Carta 2  ***\n");
+    printf("\n*** DADOS DA CARTA 2  ***\n");
     printf("Estado: %c\n", estado2);
     printf("Código: %s\n", codigo2);
     printf("Nome da Cidade: %s\n", cidade2);
